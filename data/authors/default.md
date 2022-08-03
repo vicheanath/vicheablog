@@ -1,16 +1,11 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
+name: Vichea Nath
+avatar: /static/images/avatar.jpg
+occupation: Freelance Software Engineer
+email: nathvichea1@gmail.com
 twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+linkedin: https://www.linkedin.com/vicheanath
+github: https://github.com/vicheanath
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
-
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+ខ្ញុំ វិជ្ជា អ្នកទាំងអស់គ្នាអាចហៅខ្ញុំថា `<i>`ជា`</i>`ក៍បាន វាខ្លីហើយខ្ញំុចូលចិត្ត, សព្វថ្ងៃខ្ញុំជាកម្មករគូដ ដែលធ្វើការម្នាក់ខ្ញុំ វិជ្ជា អ្នកទាំងអស់គ្នាអាចហៅខ្ញុំថា ជាក៍បាន វាខ្លីហើយខ្ញំុចូលចិត្ត, សព្វថ្ងៃខ្ញុំជាកម្មករគូដ ដែលធ្វើការម្នាក់
