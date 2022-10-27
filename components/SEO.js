@@ -157,6 +157,8 @@ export const BlogSEO = ({
             __html: JSON.stringify(structuredData, null, 2),
           }}
         />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3051490042018197"
+     crossorigin="anonymous"></script>
       </Head>
     </>
   )
