@@ -1,0 +1,127 @@
+---
+title: react js for beginners
+date: '2023-06-28'
+tags: ['react', 'javascript', 'english']
+draft: false
+images: /react-for-beginners/react.jpg
+summary: React.js is a popular JavaScript library used for building user interfaces (UIs) for web applications. It allows you to create reusable UI components and efficiently manage the state of your application. If you're new to React.js, here are some key concepts and steps to help you get started
+---
+
+React.js is a popular JavaScript library used for building user interfaces (UIs) for web applications. It allows you to create reusable UI components and efficiently manage the state of your application. If you're new to React.js, here are some key concepts and steps to help you get started
+
+## 1. Setup:
+
+    - Make sure you have Node.js installed on your machine.
+    - Use the Node Package Manager (npm) or Yarn to create a new React project:
+
+    ```bash
+    npx create-react-app my-app
+    ```
+    - Navigate to the project directory:
+    ```bash
+    cd my-app
+    ```
+    - Start the development server:
+    ```bash
+    npm start
+    ```
+    - Now you have a basic React project up and running.
+
+## 2. Components:
+
+    - React applications are built using components, which are reusable and independent pieces of UI.
+    - Start by understanding the difference between functional components and class components.
+    - You can create a functional component like this:
+    ```jsx:App.js
+    import React from 'react';
+
+    const MyComponent = () => {
+    return <div>Hello, World!</div>;
+    }
+
+    export default MyComponent;
+    ```
+    - Class components are defined using ES6 classes and have more features like lifecycle methods.
+    - Use components to structure your application and compose complex UIs.
+
+## 3. JSX:
+
+    - React uses JSX (JavaScript XML) to define the structure of components.
+    - It looks similar to HTML but allows you to embed JavaScript expressions.
+    - JSX is transpiled to JavaScript by the build process.
+    - Here's an example of JSX code:
+    ```jsx:App.js
+    import React from 'react';
+
+    const MyComponent = () => {
+    const name = 'Vichea';
+    return <div>Hello, {name}!</div>;
+    }
+
+    export default MyComponent;
+    ```
+
+## 4. Props:
+
+    - Props (short for properties) allow you to pass data from a parent component to a child component.
+    - They are immutable and used for configuring components.
+    - Here's an example of how to use props:
+    ```jsx:App.js
+    import React from 'react';
+
+    const Greeting = (props) => {
+    return <div>Hello, {props.name}!</div>;
+    }
+
+    export default Greeting;
+    ```
+
+## 5. State:
+
+    - State allows you to manage and update data within a component.
+    - Class components have a built-in state object, while functional components can use the useState hook introduced in React 16.8.
+    - State should be used when you need to store and update data that affects the component's rendering.
+    - Here's an example using the useState hook:
+    ```jsx:App.js
+    import React, { useState } from 'react';
+
+    function Counter() {
+    const [count, setCount] = useState(0);
+
+    const increment = () => {
+        setCount(count + 1);
+    };
+
+    return (
+        <div>
+        <p>Count: {count}</p>
+        <button onClick={increment}>Increment</button>
+        </div>
+    );
+    }
+
+    export default Counter;
+    ```
+
+## 6. Handling Events:
+
+    - React components can respond to user events, such as button clicks or form submissions.
+    - Use event handlers to define how your components respond to these events.
+    - Here's an example of handling a button click event:
+    ```jsx:App.js
+    import React, { useState } from 'react';
+
+    function Button() {
+    const [text, setText] = useState('Click me');
+
+    const handleClick = () => {
+        setText('Button clicked');
+    };
+
+    return <button onClick={handleClick}>{text}</button>;
+    }
+
+    export default Button;
+    ```
+
+This is just a brief introduction to React.js for beginners. React has many more features and concepts to explore, such as routing, lifecycle methods, and working with external APIs. I recommend checking out the official React documentation (https://react.dev/learn) and online tutorials to deepen your understanding and expand your knowledge of React.js. Happy coding!

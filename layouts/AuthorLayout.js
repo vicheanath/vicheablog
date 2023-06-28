@@ -4,14 +4,14 @@ import { PageSEO } from '@/components/SEO'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, avatar, occupation, company, email, twitter, linkedin, github } = frontMatter
-
+  console.log(frontMatter)
   return (
     <>
-      <PageSEO title={`អំពីខ្ញុំ - ${name}`} description={`អំពីខ្ញុំ - ${name}`} />
+      <PageSEO title={`About Me - ${name}`} description={`About Me - ${name}`} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            អំពីខ្ញុំ
+            About Me
           </h1>
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">

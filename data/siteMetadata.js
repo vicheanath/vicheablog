@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'A blog created by Vichea Nath.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://vicheablog.vercel.app',
+  siteUrl: 'https://vichea.me',
   siteRepo: 'https://github.com/vicheanath/vicheablog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
