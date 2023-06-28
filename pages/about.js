@@ -55,6 +55,10 @@ export default function About({ authorDetails }) {
                 <h2 className="ml-5 text-lg font-medium text-gray-500 dark:text-gray-400">
                   {cert.name}
                 </h2>
+
+                <h3 className="text-md ml-5 font-medium text-gray-500 dark:text-gray-400">
+                  {cert.issuer} - {cert.issued}
+                </h3>
                 <a
                   href={cert.link}
                   target="_blank"

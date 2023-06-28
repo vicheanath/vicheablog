@@ -22,6 +22,7 @@ database:
     { name: 'Mysql', logo: '/static/images/skills/mysql.png' },
     { name: 'Postgresql', logo: '/static/images/skills/postgresql.png' },
     { name: 'MongoDB', logo: '/static/images/skills/mongodb.png' },
+    { name: 'Redis', logo: '/static/images/skills/redis.png' },
   ]
 
 frameWorks:
@@ -38,7 +39,7 @@ tools:
   [
     { name: 'Docker', logo: '/static/images/skills/docker.webp' },
     { name: 'Postman', logo: '/static/images/skills/postman.webp' },
-    { name: 'Visual Studio Code', logo: '/static/images/skills/vscode.webp' },
+    { name: 'VS Code', logo: '/static/images/skills/vscode.webp' },
     { name: 'Adobe XD', logo: '/static/images/skills/xd.png' },
     { name: 'GitHub', logo: '/static/images/skills/github.png' },
     { name: 'GitLab', logo: '/static/images/skills/4844444.png' },
@@ -46,7 +47,7 @@ tools:
     { name: 'AWS', logo: '/static/images/skills/aws.png' },
     { name: 'HTML', logo: '/static/images/skills/html.png' },
     { name: 'CSS', logo: '/static/images/skills/css.png' },
-    { name: 'C-Panel Shared Hosting', logo: '/static/images/skills/cpanel.png' },
+    { name: 'C-Panel', logo: '/static/images/skills/cpanel.png' },
   ]
 
 education:
@@ -77,18 +78,24 @@ education:
 certifications:
   [
     {
-      name: 'Introduction to Back-End Development - Meta',
+      name: 'Introduction to Back-End Development',
       logo: '/static/images/skills/meta.png',
+      issued: 'Jul 2022',
+      issuer: 'Meta',
       link: 'https://coursera.org/share/c91c5fd8740f56fb2f5ce7f702352f5f',
     },
     {
-      name: 'DevOps Deployment Automation with Terraform, AWS, and Docker - Udemy',
+      name: 'DevOps Deployment Automation with Terraform, AWS, and Docker',
       logo: '/static/images/skills/udemy.png',
+      issued: 'Jan 2022',
+      issuer: 'Udemy',
       link: 'https://www.udemy.com/certificate/UC-755cf64b-ff85-4142-a583-8831fcae3ced/',
     },
     {
-      name: 'AWS Cloud Technical Essentials - Amazon Web Services (AWS)',
+      name: 'AWS Cloud Technical Essentials',
       logo: '/static/images/skills/aws.png',
+      issued: 'Dec 2021',
+      issuer: 'Amazon Web Services (AWS)',
       link: 'https://coursera.org/share/27c75b3c0830e8629e84055f481117df',
     },
   ]
@@ -117,7 +124,7 @@ workExperience:
       logo: '/static/images/work/vteam.jpg',
       start: '2019',
       end: '2020',
-      position: 'Internship',
+      position: 'Graphic Designer',
       description: 'Design posters, banners, and logos for clients.',
     },
   ]
