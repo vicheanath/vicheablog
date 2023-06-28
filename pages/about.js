@@ -25,7 +25,13 @@ export default function About({ authorDetails }) {
           {education.map((edu) => (
             <li key={edu} className="flex flex-row items-center gap-5">
               <span className="flex items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={edu.logo} alt={edu.name} width={50} height={50} objectFit="contain" />
+                <Image
+                  src={edu.logo}
+                  alt={edu.university}
+                  width={50}
+                  height={50}
+                  objectFit="contain"
+                />
               </span>
               <div className="flex flex-col">
                 <h2 className="text-lg font-medium text-gray-500 dark:text-gray-400">
@@ -137,7 +143,7 @@ export default function About({ authorDetails }) {
           {workExperience.map((work) => (
             <li key={work} className="flex flex-row items-center gap-5">
               <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={work.logo} alt={work.name} width={50} height={50} />
+                <Image src={work.logo} alt={work.company} width={50} height={50} />
               </span>
               <div className="flex flex-col">
                 <h2 className="text-lg font-medium text-gray-500 dark:text-gray-400">
