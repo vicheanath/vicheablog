@@ -4,7 +4,7 @@ import { PageSEO } from '@/components/SEO'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, avatar, occupation, company, email, twitter, linkedin, github } = frontMatter
-  console.log(frontMatter)
+
   return (
     <>
       <PageSEO title={`About Me - ${name}`} description={`About Me - ${name}`} />
