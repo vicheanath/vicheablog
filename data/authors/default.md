@@ -34,10 +34,12 @@ frameWorks:
 
 tools:
   [
-    { name: 'Visual Studio Code', logo: '/static/images/skills/vscode.png' },
+    { name: 'Docker', logo: '/static/images/skills/docker.webp' },
+    { name: 'Postman', logo: '/static/images/skills/postman.webp' },
+    { name: 'Visual Studio Code', logo: '/static/images/skills/vscode.webp' },
     { name: 'Adobe XD', logo: '/static/images/skills/xd.png' },
     { name: 'GitHub', logo: '/static/images/skills/github.png' },
-    { name: 'GitLab', logo: '/static/images/skills/gitlab.png' },
+    { name: 'GitLab', logo: '/static/images/skills/4844444.png' },
     { name: 'Nginx', logo: '/static/images/skills/nginx.png' },
     { name: 'AWS', logo: '/static/images/skills/aws.png' },
     { name: 'HTML', logo: '/static/images/skills/html.png' },
@@ -52,21 +54,21 @@ education:
       logo: '/static/images/skills/rupp.png',
       start: '2018',
       end: '2022',
-      major: 'Computer Science and Engineer',
+      major: 'Bachelor of Computer Science and Engineering',
     },
     {
       university: 'Western Iowa Tech Community College',
       logo: '/static/images/skills/witcc.jpg',
       start: '2022',
       end: '2022',
-      major: 'Video Game Design',
+      major: 'Video Game Design - Short Course',
     },
     {
       university: 'Royal University of Phnom Penh',
       logo: '/static/images/skills/rupp.png',
       start: '2018',
       end: '2018',
-      major: 'Graphic Design 101',
+      major: 'Graphic Design 101 - Short Course',
     },
   ]
 
@@ -75,21 +77,50 @@ certifications:
     {
       name: 'Introduction to Back-End Development - Meta',
       logo: '/static/images/skills/meta.png',
-      link: 'https://www.meta.com.kh/',
+      link: 'https://coursera.org/share/c91c5fd8740f56fb2f5ce7f702352f5f',
     },
     {
       name: 'DevOps Deployment Automation with Terraform, AWS, and Docker - Udemy',
       logo: '/static/images/skills/udemy.png',
-      link: 'https://www.udemy.com/',
+      link: 'https://www.udemy.com/certificate/UC-755cf64b-ff85-4142-a583-8831fcae3ced/',
     },
     {
       name: 'AWS Cloud Technical Essentials - Amazon Web Services (AWS)',
       logo: '/static/images/skills/aws.png',
-      link: 'https://www.aws.com/',
+      link: 'https://coursera.org/share/27c75b3c0830e8629e84055f481117df',
+    },
+  ]
+
+workExperience:
+  [
+    {
+      company: 'PHVCT A2888 Co., Ltd',
+      logo: '/static/images/work/phvct.png',
+      start: '2021',
+      end: 'Present',
+      position: 'Software Engineer',
+      description: '
+        Manage and develop new features such as API, Web, and Mobile App.',
+    },
+    {
+      company: 'PLAN-B Cambodia',
+      logo: '/static/images/work/planb.png',
+      start: '2020',
+      end: '2021',
+      position: 'UI/UX Designer & Front-End Developer',
+      description: 'Design UI App and Website for clients.',
+    },
+    {
+      company: 'Vteam Graphic Solution',
+      logo: '/static/images/work/vteam.jpg',
+      start: '2019',
+      end: '2020',
+      position: 'Internship',
+      description: 'Design posters, banners, and logos for clients.',
     },
   ]
 ---
 
-## Summary
+## Introduction
 
 I am a skilled Software Engineer proficient in programming languages such as Python, PHP, JavaScript, and C++. Throughout my career, I have successfully designed and delivered high-quality software applications. I possess a solid understanding of data structures, algorithms, and object-oriented programming principles. I have expertise in various software development frameworks and tools, including Laravel, Django, React, Express.js, and Git. Additionally, I have extensive experience working with databases like MySQL, Postgresql, and MongoDB. Continuously learning and staying updated with the latest technologies is important to me. I am a dedicated and result-oriented professional with strong problem-solving and collaboration skills.
