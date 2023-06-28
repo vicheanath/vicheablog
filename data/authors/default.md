@@ -29,7 +29,9 @@ frameWorks:
     { name: 'Laravel', logo: '/static/images/skills/laravel.png' },
     { name: 'Django', logo: '/static/images/skills/django.png' },
     { name: 'React', logo: '/static/images/skills/react.png' },
+    { name: 'React Native', logo: '/static/images/skills/react.png' },
     { name: 'Express.js', logo: '/static/images/skills/express.png' },
+    { name: 'Next.js', logo: '/static/images/skills/nextjs.png' },
   ]
 
 tools:

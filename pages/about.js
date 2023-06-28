@@ -19,13 +19,13 @@ export default function About({ authorDetails }) {
         mdxSource={mdxSource}
         frontMatter={frontMatter}
       />
-      <div className="mt-5 flex flex-col">
+      <div className="mt-5">
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Education</h1>
         <ul className="mt-5 flex flex-wrap gap-5">
           {education.map((edu) => (
             <li key={edu} className="flex flex-row items-center gap-5">
-              <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={edu.logo} alt={edu.name} width={50} height={50} />
+              <span className="flex items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
+                <Image src={edu.logo} alt={edu.name} width={50} height={50} objectFit="contain" />
               </span>
               <div className="flex flex-col">
                 <h2 className="text-lg font-medium text-gray-500 dark:text-gray-400">
@@ -76,13 +76,7 @@ export default function About({ authorDetails }) {
           {programming.map((prog) => (
             <li key={prog} className="flex flex-col items-center">
               <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image
-                  src={prog.logo}
-                  alt={prog.name}
-                  width={100}
-                  height={100}
-                  objectFit="contain"
-                />
+                <Image src={prog.logo} alt={prog.name} width={70} height={70} objectFit="contain" />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">
                 {prog.name}
@@ -97,7 +91,7 @@ export default function About({ authorDetails }) {
           {database.map((db) => (
             <li key={db} className="flex flex-col items-center">
               <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={db.logo} alt={db.name} width={100} height={100} objectFit="contain" />
+                <Image src={db.logo} alt={db.name} width={70} height={70} objectFit="contain" />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">{db.name}</p>
             </li>
@@ -110,7 +104,7 @@ export default function About({ authorDetails }) {
           {frameWorks.map((fw) => (
             <li key={fw} className="flex flex-col items-center">
               <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={fw.logo} alt={fw.name} width={100} height={100} objectFit="contain" />
+                <Image src={fw.logo} alt={fw.name} width={70} height={70} objectFit="contain" />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">{fw.name}</p>
             </li>
@@ -123,13 +117,7 @@ export default function About({ authorDetails }) {
           {tools.map((tool) => (
             <li key={tool} className="flex flex-col">
               <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image
-                  src={tool.logo}
-                  alt={tool.name}
-                  width={100}
-                  height={100}
-                  objectFit="contain"
-                />
+                <Image src={tool.logo} alt={tool.name} width={70} height={70} objectFit="contain" />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">
                 {tool.name}
