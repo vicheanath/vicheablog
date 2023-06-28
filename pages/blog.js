@@ -20,14 +20,14 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
   return (
     <>
       <PageSEO
-        title={`ប្លុកទាំងអស់ - ${siteMetadata.author}`}
+        title={`All Posts - ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
       <ListLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="ប្លុកទាំងអស់"
+        title="All Posts"
       />
     </>
   )

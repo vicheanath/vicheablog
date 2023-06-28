@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'វិជ្ជា​ ប្លុក',
-  author: 'វិជ្ជា​',
-  headerTitle: 'វិជ្ជា​ ប្លុក',
-  description: 'គេហទំពរ័ ផ្ទាល់ខ្លួនសម្រាប់ សរសេពីអ្វីដែលចូលចិត្ត​ និង ចង់ចែករំលែក',
+  title: 'Vichea Nath',
+  author: 'Vichea Nath',
+  headerTitle: 'Vichea Nath',
+  description: 'A blog created by Vichea Nath.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://vicheablog.vercel.app',
