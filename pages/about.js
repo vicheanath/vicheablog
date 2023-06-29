@@ -249,8 +249,7 @@ export default function About({ authorDetails }) {
                   />
                 </span>
                 <div className="flex space-x-2 ">
-                  <SocialIcon kind="mail" href={`mailto:${re.email}`} />
-                  <SocialIcon kind="github" href={re.github} />
+                  <SocialIcon kind="github" href={re.github} size={20} />
                   <SocialIcon kind="linkedin" href={re.linkedin} />
                   <SocialIcon kind="website" href={re.website} />
                   <SocialIcon kind="facebook" href={re.facebook} />

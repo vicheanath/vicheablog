@@ -6,8 +6,19 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import { useRouter } from 'next/router'
 
 const LayoutWrapper = ({ children }) => {
+  const router = useRouter()
+  const path = router.pathname
+  const activeMenuItem = (href) => {
+    if (href === path) {
+      return 'text-gray-900 dark:text-gray-100'
+    } else {
+      return 'text-gray-500 dark:text-gray-400'
+    }
+  }
+
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
@@ -34,9 +45,10 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                  className={`p-1 font-medium sm:p-4 ${activeMenuItem(link.href)}`}
                 >
-                  {link.title}
+                  <span className="text-gray-900 dark:text-gray-100">{link.icon}</span>
+                  <span className="ml-2">{link.title}</span>
                 </Link>
               ))}
             </div>
