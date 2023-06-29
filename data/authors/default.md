@@ -142,6 +142,16 @@ workExperience:
 recommendation:
   [
     {
+      photo: '/static/images/recomment/hout.jpeg',
+      comment: "I have had the privilege of working closely with Vichea for the past four years, and I wholeheartedly recommend him as a highly skilled and professional full-stack developer. Vichea's expertise in software engineering, spanning design, front-end development, back-end development, and DevOps, is truly impressive. He approaches his work with humility, continuously seeking opportunities to learn and grow. With his strong work ethic, attention to detail, and problem-solving abilities, Vichea consistently delivers exceptional results. I have witnessed firsthand his dedication and passion for his craft, and I am confident that he would be a valuable asset to any team or organization.",
+      occupation: 'Lead UX/UI Designer | Front-end Developer',
+      name: 'Seng Hout',
+      facebook: 'https://www.linkedin.com/in/seng-hout/',
+      linkedin: 'https://www.linkedin.com/in/seng-hout/',
+      website: 'https://senghout.com/',
+      github: 'https://www.linkedin.com/in/seng-hout/',
+    },
+    {
       photo: '/static/images/recomment/thearong.jpg',
       comment: 'Vichea is a highly skilled and dedicated software engineer who consistently delivers outstanding results. With a passion for problem-solving and a commitment to staying updated with the latest technologies, He excels in developing efficient and innovative solutions. Their exceptional collaboration and communication skills make them a valuable asset in any team. I confidently recommend He for software engineering opportunities, as their talent and drive are sure to make a significant impact.',
       occupation: 'Full Stack Developer',

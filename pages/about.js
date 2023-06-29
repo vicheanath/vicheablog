@@ -125,11 +125,17 @@ export default function About({ authorDetails }) {
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
           Programming Languages
         </h1>
-        <ul className="mt-5 flex flex-wrap gap-5">
+        <ul className="mt-5 grid grid-cols-4 gap-5 sm:grid-cols-6 md:grid-cols-8">
           {programming.map((prog) => (
             <li key={prog} className="flex flex-col items-center">
               <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={prog.logo} alt={prog.name} width={70} height={70} objectFit="contain" />
+                <Image
+                  src={prog.logo}
+                  alt={prog.name}
+                  width={'100%'}
+                  height={'100%'}
+                  objectFit="contain"
+                />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">
                 {prog.name}
@@ -140,11 +146,17 @@ export default function About({ authorDetails }) {
       </div>
       <div className="mt-5 flex flex-col">
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Database</h1>
-        <ul className="mt-5 flex flex-wrap gap-5">
+        <ul className="mt-5 grid grid-cols-4 gap-5 sm:grid-cols-6 md:grid-cols-8">
           {database.map((db) => (
             <li key={db} className="flex flex-col items-center">
               <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={db.logo} alt={db.name} width={70} height={70} objectFit="contain" />
+                <Image
+                  src={db.logo}
+                  alt={db.name}
+                  width={'100%'}
+                  height={'100%'}
+                  objectFit="contain"
+                />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">{db.name}</p>
             </li>
@@ -153,11 +165,17 @@ export default function About({ authorDetails }) {
       </div>
       <div className="mt-5 flex flex-col">
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Frameworks</h1>
-        <ul className="mt-5 flex flex-wrap gap-5">
+        <ul className="mt-5 grid grid-cols-4 gap-5 sm:grid-cols-6 md:grid-cols-8">
           {frameWorks.map((fw) => (
             <li key={fw} className="flex flex-col items-center">
               <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={fw.logo} alt={fw.name} width={70} height={70} objectFit="contain" />
+                <Image
+                  src={fw.logo}
+                  alt={fw.name}
+                  width={'100%'}
+                  height={'100%'}
+                  objectFit="contain"
+                />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">{fw.name}</p>
             </li>
@@ -166,11 +184,17 @@ export default function About({ authorDetails }) {
       </div>
       <div className="mt-5 flex flex-col">
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Tools</h1>
-        <ul className="mt-5 flex flex-wrap gap-5">
+        <ul className="mt-5  grid grid-cols-4 gap-5 sm:grid-cols-6 md:grid-cols-8">
           {tools.map((tool) => (
             <li key={tool} className="flex flex-col items-center">
               <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={tool.logo} alt={tool.name} width={70} height={70} objectFit="contain" />
+                <Image
+                  src={tool.logo}
+                  alt={tool.name}
+                  width={'100%'}
+                  height={'100%'}
+                  objectFit="contain"
+                />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">
                 {tool.name}
@@ -186,14 +210,14 @@ export default function About({ authorDetails }) {
           {recommendation.map((re) => (
             <li
               key={re}
-              className="grid grid-cols-1 gap-4 rounded-md bg-gray-100 p-4 dark:bg-gray-800 sm:grid-cols-4"
+              className="grid grid-cols-1  gap-5 rounded-md bg-gray-100 p-4 dark:bg-gray-800 sm:grid-cols-4"
             >
               <span className="col-span-1 flex w-full flex-col items-center overflow-hidden">
                 <Image src={re.photo} alt={re.name} width={300} height={300} objectFit="contain" />
               </span>
               <div className="col-span-3 flex flex-col justify-start">
                 <p className="mt-2 text-lg font-bold text-gray-800 dark:text-gray-100">{re.name}</p>
-                <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">
+                <p className="text-md mt-2 font-medium text-gray-500 dark:text-gray-400">
                   {re.occupation}
                 </p>
                 <div className="flex">
