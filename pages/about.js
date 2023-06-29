@@ -79,6 +79,30 @@ export default function About({ authorDetails }) {
         </ul>
       </div>
       <div className="mt-5 flex flex-col">
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Work Experience</h1>
+        <ul className="mt-5 flex flex-wrap gap-5">
+          {workExperience.map((work) => (
+            <li key={work} className="flex flex-row items-center gap-5">
+              <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
+                <Image src={work.logo} alt={work.company} width={50} height={50} />
+              </span>
+              <div className="flex flex-col">
+                <h2 className="text-lg font-medium text-gray-500 dark:text-gray-400">
+                  {work.company}
+                </h2>
+                <h3 className="text-md font-medium text-gray-500 dark:text-gray-400">
+                  {work.start} - {work.end} | {work.position}
+                </h3>
+                <p className="text-md font-medium text-gray-500 dark:text-gray-400">
+                  {work.description}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="mt-5 flex flex-col">
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
           Programming Languages
         </h1>
@@ -132,33 +156,6 @@ export default function About({ authorDetails }) {
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">
                 {tool.name}
               </p>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="mt-5 flex flex-col">
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Work Experience</h1>
-        <ul className="mt-5 flex flex-wrap gap-5">
-          {workExperience.map((work) => (
-            <li key={work} className="flex flex-row items-center gap-5">
-              <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={work.logo} alt={work.company} width={50} height={50} />
-              </span>
-              <div className="flex flex-col">
-                <h2 className="text-lg font-medium text-gray-500 dark:text-gray-400">
-                  {work.company}
-                </h2>
-                <h3 className="text-md font-medium text-gray-500 dark:text-gray-400">
-                  {work.position}
-                </h3>
-                <p className="text-md font-medium text-gray-500 dark:text-gray-400">
-                  {work.start} - {work.end}
-                </p>
-                <p className="text-md font-medium text-gray-500 dark:text-gray-400">
-                  {work.description}
-                </p>
-              </div>
             </li>
           ))}
         </ul>

@@ -107,8 +107,7 @@ workExperience:
       start: '2021',
       end: 'Present',
       position: 'Software Engineer',
-      description: '
-        Manage and develop new features such as API, Web, and Mobile App.',
+      description: 'Manage and develop new features such as API, Web, and Mobile App.',
     },
     {
       company: 'PLAN-B Cambodia',
@@ -116,7 +115,7 @@ workExperience:
       start: '2020',
       end: '2021',
       position: 'UI/UX Designer & Front-End Developer',
-      description: 'Design UI App and Website for clients.',
+      description: 'Design UI App and Website that assign from team leader.',
     },
     {
       company: 'Vteam Graphic Solution',
@@ -124,7 +123,7 @@ workExperience:
       start: '2019',
       end: '2020',
       position: 'Graphic Designer',
-      description: 'Design posters, banners, and logos for clients.',
+      description: 'Design posters, banners, logos, and other graphic works.',
     },
   ]
 ---
