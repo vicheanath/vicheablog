@@ -49,14 +49,22 @@ tools:
     { name: 'C-Panel', logo: '/static/images/skills/cpanel.png' },
   ]
 
-education:
-  [
+education: [
+    # {
+    #   university: 'Maharishi International University',
+    #   logo: '/static/images/skills/miu.png',
+    #   start: 'Aug 2023',
+    #   end: 'Present',
+    #   major: 'Master of Computer Science',
+    #   location: 'Fairfield, Iowa, USA',
+    # },
     {
       university: 'Royal University of Phnom Penh',
       logo: '/static/images/skills/rupp.png',
       start: 'Aug 2018',
       end: 'Jun 2022',
       major: 'Bachelor of Computer Science and Engineering',
+      location: 'Phnom Penh, Cambodia',
     },
     {
       university: 'Western Iowa Tech Community College',
@@ -64,6 +72,7 @@ education:
       start: 'Jan 2022',
       end: 'Jul 2022',
       major: 'Video Game Design - Short Course',
+      location: 'Online By Union of Youth Federations of Cambodia',
     },
     {
       university: 'Royal University of Phnom Penh',
@@ -71,6 +80,7 @@ education:
       start: 'Feb 2018',
       end: 'Jul 2018',
       major: 'Graphic Design 101 - Short Course',
+      location: 'Phnom Penh, Cambodia',
     },
   ]
 
@@ -108,6 +118,7 @@ workExperience:
       end: 'Present',
       position: 'Software Engineer',
       description: 'Lead, Manage and develop of new platforms, API, Web, and Mobile app.',
+      location: 'Phnom Penh, Cambodia',
     },
     {
       company: 'PLAN-B Cambodia',
@@ -116,6 +127,7 @@ workExperience:
       end: 'Jul 2021',
       position: 'UI/UX Designer & Front-End Developer',
       description: 'Design UI App and Website that assign from team leader.',
+      location: 'Phnom Penh, Cambodia',
     },
     {
       company: 'Vteam Graphic Solution',
@@ -124,6 +136,20 @@ workExperience:
       end: 'Aug 2020',
       position: 'Graphic Designer',
       description: 'Design posters, banners, logos, and other graphic works.',
+      location: 'Phnom Penh, Cambodia',
+    },
+  ]
+recommendation:
+  [
+    {
+      photo: '/static/images/recomment/thearong.jpg',
+      comment: 'I admire your decision to pursue a career as a software engineer. It is a field that is constantly evolving and offers endless possibilities for creativity and problem-solving.',
+      occupation: 'Full Stack Developer',
+      name: 'Py Thearong',
+      facebook: 'https://web.facebook.com/thea.rong.38',
+      linkedin: 'https://web.facebook.com/thea.rong.38',
+      website: 'pp',
+      github: 'https://github.com/TheaRong',
     },
   ]
 ---
