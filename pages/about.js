@@ -34,7 +34,7 @@ export default function About({ authorDetails }) {
                 />
               </span>
               <div className="flex flex-col">
-                <h2 className="text-lg font-medium text-gray-500 dark:text-gray-400">
+                <h2 className="text-lg font-medium text-gray-800 dark:text-gray-100">
                   {edu.major}
                 </h2>
                 <h3 className="text-md font-medium text-gray-500 dark:text-gray-400">
@@ -58,7 +58,7 @@ export default function About({ authorDetails }) {
                 <Image src={cert.logo} alt={cert.name} width={50} height={50} objectFit="contain" />
               </span>
               <div>
-                <h2 className="ml-5 text-lg font-medium text-gray-500 dark:text-gray-400">
+                <h2 className="ml-5 text-lg font-medium text-gray-800 dark:text-gray-100">
                   {cert.name}
                 </h2>
 
@@ -87,7 +87,7 @@ export default function About({ authorDetails }) {
                 <Image src={work.logo} alt={work.company} width={50} height={50} />
               </span>
               <div className="flex flex-col">
-                <h2 className="text-lg font-medium text-gray-500 dark:text-gray-400">
+                <h2 className="text-lg font-medium text-gray-800 dark:text-gray-100">
                   {work.company}
                 </h2>
                 <h3 className="text-md font-medium text-gray-500 dark:text-gray-400">
@@ -149,7 +149,7 @@ export default function About({ authorDetails }) {
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Tools</h1>
         <ul className="mt-5 flex flex-wrap gap-5">
           {tools.map((tool) => (
-            <li key={tool} className="flex flex-col">
+            <li key={tool} className="flex flex-col items-center">
               <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
                 <Image src={tool.logo} alt={tool.name} width={70} height={70} objectFit="contain" />
               </span>

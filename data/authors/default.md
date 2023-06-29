@@ -107,7 +107,7 @@ workExperience:
       start: '2021',
       end: 'Present',
       position: 'Software Engineer',
-      description: 'Manage and develop new features such as API, Web, and Mobile App.',
+      description: 'Lead, Manage and develop of new platforms, API, Web, and Mobile app.',
     },
     {
       company: 'PLAN-B Cambodia',
