@@ -186,20 +186,18 @@ export default function About({ authorDetails }) {
           {recommendation.map((re) => (
             <li
               key={re}
-              className="flex flex-row items-start gap-4 rounded-md bg-gray-100 p-4 dark:bg-gray-800"
+              className="grid grid-cols-1 gap-4 rounded-md bg-gray-100 p-4 dark:bg-gray-800 sm:grid-cols-4"
             >
-              <span className="flex flex-col items-center overflow-hidden rounded-md">
+              <span className="col-span-1 flex w-full flex-col items-center overflow-hidden">
                 <Image src={re.photo} alt={re.name} width={300} height={300} objectFit="contain" />
               </span>
-              <div className="flex flex-col justify-start">
+              <div className="col-span-3 flex flex-col justify-start">
                 <p className="mt-2 text-lg font-bold text-gray-800 dark:text-gray-100">{re.name}</p>
                 <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">
                   {re.occupation}
                 </p>
                 <div className="flex">
-                  <blockquote>
-                    <p className="italic">{re.comment}</p>
-                  </blockquote>
+                  <blockquote className="italic">{re.comment}</blockquote>
                 </div>
                 <div className="flex space-x-3 pt-2">
                   <SocialIcon kind="mail" href={`mailto:${re.email}`} />

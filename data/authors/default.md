@@ -143,9 +143,9 @@ recommendation:
   [
     {
       photo: '/static/images/recomment/thearong.jpg',
-      comment: 'I admire your decision to pursue a career as a software engineer. It is a field that is constantly evolving and offers endless possibilities for creativity and problem-solving.',
+      comment: 'Vichea is a highly skilled and dedicated software engineer who consistently delivers outstanding results. With a passion for problem-solving and a commitment to staying updated with the latest technologies, He excels in developing efficient and innovative solutions. Their exceptional collaboration and communication skills make them a valuable asset in any team. I confidently recommend He for software engineering opportunities, as their talent and drive are sure to make a significant impact.',
       occupation: 'Full Stack Developer',
-      name: 'Py Thearong',
+      name: 'Phy Thearong',
       facebook: 'https://web.facebook.com/thea.rong.38',
       linkedin: 'https://web.facebook.com/thea.rong.38',
       website: 'pp',
