@@ -44,6 +44,8 @@ export default function About({ authorDetails }) {
                   width={'100%'}
                   height={'100%'}
                   objectFit="contain"
+                  placeholder="blur"
+                  blurDataURL={edu.logo}
                 />
               </span>
               <div className="flex flex-col sm:col-span-5">
@@ -81,6 +83,8 @@ export default function About({ authorDetails }) {
                   width={'100%'}
                   height={'100%'}
                   objectFit="contain"
+                  placeholder="blur"
+                  blurDataURL={cert.logo}
                 />
               </span>
               <div className="flex flex-col sm:col-span-5">
@@ -110,7 +114,15 @@ export default function About({ authorDetails }) {
           {workExperience.map((work) => (
             <li key={work} className="grid grid-cols-1 gap-5 sm:grid-cols-6">
               <span className="flex flex-col items-center justify-center rounded-md bg-gray-100 p-3 dark:bg-gray-200 sm:col-span-1">
-                <Image src={work.logo} alt={work.company} width={'100%'} height={'100%'} />
+                <Image
+                  src={work.logo}
+                  alt={work.company}
+                  width={'100%'}
+                  height={'100%'}
+                  objectFit="contain"
+                  placeholder="blur"
+                  blurDataURL={work.logo}
+                />
               </span>
               <div className="flex flex-col sm:col-span-5">
                 <h2 className="text-lg font-medium text-gray-800 dark:text-gray-100">
@@ -142,6 +154,8 @@ export default function About({ authorDetails }) {
                   width={'100%'}
                   height={'100%'}
                   objectFit="contain"
+                  placeholder="blur"
+                  blurDataURL={prog.logo}
                 />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">
@@ -163,6 +177,8 @@ export default function About({ authorDetails }) {
                   width={'100%'}
                   height={'100%'}
                   objectFit="contain"
+                  placeholder="blur"
+                  blurDataURL={db.logo}
                 />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">{db.name}</p>
@@ -182,6 +198,8 @@ export default function About({ authorDetails }) {
                   width={'100%'}
                   height={'100%'}
                   objectFit="contain"
+                  placeholder="blur"
+                  blurDataURL={fw.logo}
                 />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">{fw.name}</p>
@@ -201,6 +219,8 @@ export default function About({ authorDetails }) {
                   width={'100%'}
                   height={'100%'}
                   objectFit="contain"
+                  placeholder="blur"
+                  blurDataURL={tool.logo}
                 />
               </span>
               <p className="mt-2 text-lg font-medium text-gray-500 dark:text-gray-400">
@@ -220,7 +240,15 @@ export default function About({ authorDetails }) {
               className="grid grid-cols-1 gap-5 rounded-md bg-gray-100 p-4 dark:bg-gray-800 sm:grid-cols-4"
             >
               <span className="col-span-1 flex w-full flex-col items-center overflow-hidden">
-                <Image src={re.photo} alt={re.name} width={300} height={300} objectFit="cover" />
+                <Image
+                  src={re.photo}
+                  alt={re.name}
+                  width={300}
+                  height={300}
+                  objectFit="cover"
+                  placeholder="blur"
+                  blurDataURL={re.photo}
+                />
               </span>
               <div className="col-span-3 flex flex-col justify-start">
                 <p className="mt-2 text-lg font-bold text-gray-800 dark:text-gray-100">{re.name}</p>
