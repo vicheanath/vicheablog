@@ -36,17 +36,17 @@ export default function About({ authorDetails }) {
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Education</h1>
         <ul className="mt-5 flex flex-col gap-5">
           {education.map((edu) => (
-            <li key={edu} className="flex flex-row items-center gap-5">
-              <span className="flex items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
+            <li key={edu} className="grid grid-cols-1 gap-5 sm:grid-cols-6">
+              <span className="flex items-center justify-center rounded-md bg-gray-100 p-3 dark:bg-gray-200 sm:col-span-1">
                 <Image
                   src={edu.logo}
                   alt={edu.university}
-                  width={50}
-                  height={50}
+                  width={'100%'}
+                  height={'100%'}
                   objectFit="contain"
                 />
               </span>
-              <div className="flex flex-col">
+              <div className="flex flex-col sm:col-span-5">
                 <h2 className="text-lg font-medium text-gray-800 dark:text-gray-100">
                   {edu.major}
                 </h2>
@@ -73,25 +73,32 @@ export default function About({ authorDetails }) {
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Certifications</h1>
         <ul className="mt-5 flex flex-col gap-5">
           {certifications.map((cert) => (
-            <li key={cert} className="flex flex-row items-center gap-5">
-              <span className="flex items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={cert.logo} alt={cert.name} width={50} height={50} objectFit="contain" />
+            <li key={cert} className="grid grid-cols-1 gap-5 sm:grid-cols-6">
+              <span className="flex items-center justify-center rounded-md bg-gray-100 p-3 dark:bg-gray-200 sm:col-span-1">
+                <Image
+                  src={cert.logo}
+                  alt={cert.name}
+                  width={'100%'}
+                  height={'100%'}
+                  objectFit="contain"
+                />
               </span>
-              <div className="flex flex-col">
-                <h2 className="text-lg font-medium text-gray-800 dark:text-gray-100">
-                  {cert.name}
-                </h2>
-
-                <h3 className="text-md font-medium text-gray-500 dark:text-gray-400">
-                  {cert.issuer} - {cert.issued}
-                </h3>
-                <Link href={cert.link} passHref>
-                  <a target="_blank">
-                    <div className="text-md flex cursor-pointer items-center gap-2 font-medium text-yellow-500 dark:text-yellow-400">
-                      <span>Show credential</span> <FiExternalLink />
-                    </div>
-                  </a>
-                </Link>
+              <div className="flex flex-col sm:col-span-5">
+                <div>
+                  <h2 className="text-lg font-medium text-gray-800 dark:text-gray-100">
+                    {cert.name}
+                  </h2>
+                  <h3 className="text-md font-medium text-gray-500 dark:text-gray-400">
+                    {cert.issuer} - {cert.issued}
+                  </h3>
+                  <Link href={cert.link} passHref>
+                    <a target="_blank">
+                      <div className="text-md flex cursor-pointer items-center gap-2 font-medium text-yellow-500 dark:text-yellow-400">
+                        <span>Show credential</span> <FiExternalLink />
+                      </div>
+                    </a>
+                  </Link>
+                </div>
               </div>
             </li>
           ))}
@@ -99,13 +106,13 @@ export default function About({ authorDetails }) {
       </div>
       <div className="mt-5 flex flex-col">
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Work Experience</h1>
-        <ul className="mt-5 flex flex-wrap gap-5">
+        <ul className="mt-5 grid gap-5">
           {workExperience.map((work) => (
-            <li key={work} className="flex flex-row items-center gap-5">
-              <span className="flex flex-col items-center rounded-md bg-gray-100 p-3 dark:bg-gray-200">
-                <Image src={work.logo} alt={work.company} width={50} height={50} />
+            <li key={work} className="grid grid-cols-1 gap-5 sm:grid-cols-6">
+              <span className="flex flex-col items-center justify-center rounded-md bg-gray-100 p-3 dark:bg-gray-200 sm:col-span-1">
+                <Image src={work.logo} alt={work.company} width={'100%'} height={'100%'} />
               </span>
-              <div className="flex flex-col">
+              <div className="flex flex-col sm:col-span-5">
                 <h2 className="text-lg font-medium text-gray-800 dark:text-gray-100">
                   {work.company}
                 </h2>
@@ -210,10 +217,10 @@ export default function About({ authorDetails }) {
           {recommendation.map((re) => (
             <li
               key={re}
-              className="grid grid-cols-1  gap-5 rounded-md bg-gray-100 p-4 dark:bg-gray-800 sm:grid-cols-4"
+              className="grid grid-cols-1 gap-5 rounded-md bg-gray-100 p-4 dark:bg-gray-800 sm:grid-cols-4"
             >
               <span className="col-span-1 flex w-full flex-col items-center overflow-hidden">
-                <Image src={re.photo} alt={re.name} width={300} height={300} objectFit="contain" />
+                <Image src={re.photo} alt={re.name} width={300} height={300} objectFit="cover" />
               </span>
               <div className="col-span-3 flex flex-col justify-start">
                 <p className="mt-2 text-lg font-bold text-gray-800 dark:text-gray-100">{re.name}</p>
