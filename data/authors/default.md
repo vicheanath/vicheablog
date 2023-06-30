@@ -49,16 +49,15 @@ tools:
     { name: 'C-Panel', logo: '/static/images/skills/cpanel.png' },
   ]
 
-education:
-  [
-    {
-      university: 'Maharishi International University',
-      logo: '/static/images/skills/miu.png',
-      start: 'Aug 2023',
-      end: 'Present',
-      major: 'Master of Computer Science',
-      location: 'Fairfield, Iowa, USA',
-    },
+education: [
+    # {
+    #   university: 'Maharishi International University',
+    #   logo: '/static/images/skills/miu.png',
+    #   start: 'Aug 2023',
+    #   end: 'Present',
+    #   major: 'Master of Computer Science',
+    #   location: 'Fairfield, Iowa, USA',
+    # },
     {
       university: 'Royal University of Phnom Penh',
       logo: '/static/images/skills/rupp.png',
