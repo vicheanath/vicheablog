@@ -36,7 +36,7 @@ export default function About({ authorDetails }) {
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Education</h1>
         <ul className="mt-5 flex flex-col gap-5">
           {education.map((edu) => (
-            <li key={edu} className="grid grid-cols-1 gap-5 sm:grid-cols-6">
+            <li key={edu} className="grid grid-cols-2 gap-5 sm:grid-cols-8">
               <span className="flex items-center justify-center rounded-md bg-gray-100 p-3 dark:bg-gray-200 sm:col-span-1">
                 <Image
                   src={edu.logo}
@@ -75,7 +75,7 @@ export default function About({ authorDetails }) {
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Certifications</h1>
         <ul className="mt-5 flex flex-col gap-5">
           {certifications.map((cert) => (
-            <li key={cert} className="grid grid-cols-1 gap-5 sm:grid-cols-6">
+            <li key={cert} className="grid grid-cols-1 gap-5 sm:grid-cols-8">
               <span className="flex items-center justify-center rounded-md bg-gray-100 p-3 dark:bg-gray-200 sm:col-span-1">
                 <Image
                   src={cert.logo}
@@ -112,7 +112,7 @@ export default function About({ authorDetails }) {
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Work Experience</h1>
         <ul className="mt-5 grid gap-5">
           {workExperience.map((work) => (
-            <li key={work} className="grid grid-cols-1 gap-5 sm:grid-cols-6">
+            <li key={work} className="grid grid-cols-1 gap-5 sm:grid-cols-8">
               <span className="flex flex-col items-center justify-center rounded-md bg-gray-100 p-3 dark:bg-gray-200 sm:col-span-1">
                 <Image
                   src={work.logo}
