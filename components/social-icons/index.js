@@ -28,7 +28,7 @@ const SocialIcon = ({ kind, href, size = 24 }) => {
   if (!SocialSvg) return null
   return (
     <a
-      className="text-sm text-gray-500 transition hover:text-yellow-500 dark:text-gray-400 dark:hover:text-yellow-500"
+      className="text-sm text-gray-500 outline-none transition hover:border-yellow-500 hover:text-yellow-500 hover:outline-yellow-500 focus:outline-yellow-500 dark:text-gray-400 dark:hover:border-yellow-500 dark:hover:text-yellow-500"
       target="_blank"
       rel="noopener noreferrer"
       href={href}
