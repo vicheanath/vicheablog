@@ -2,40 +2,91 @@ import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
 import Link from './Link'
+import React from 'react'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import { useRouter } from 'next/router'
 import { useSession, signIn, signOut } from 'next-auth/react'
+import Button from './Button'
+import { FiLogIn, FiLogOut } from 'react-icons/fi'
 
 const Profile = () => {
   const { data: session } = useSession()
+  const [isOpen, setIsOpen] = React.useState(false)
   if (session) {
     return (
-      <div className="flex items-center justify-between">
-        <div className="flex items-center">
-          <div className="mr-3">
-            <img src={session.user.image} alt="avatar" className="h-10 w-10 rounded-full" />
+      <div
+        className="relative inline-block cursor-pointer justify-center rounded-md px-3 py-2 hover:bg-gray-100 focus:outline-none dark:hover:bg-gray-800"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div>
+          <div className="flex items-center">
+            <div className="mr-3">
+              <img src={session.user.image} alt="avatar" className="h-10 w-10 rounded-full" />
+            </div>
+            <div className="hidden h-6 text-lg font-semibold sm:block">{session.user.name}</div>
           </div>
-          <div className="hidden h-6 text-2xl font-semibold sm:block">{session.user.name}</div>
         </div>
-        <button
-          className="focus:shadow-outline-primary rounded-md border border-transparent bg-primary-600 px-3 py-2 text-sm font-medium leading-4 text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none active:bg-primary-600"
-          onClick={() => signOut()}
+
+        <div
+          className={`
+          ${
+            isOpen
+              ? 'scale-100 transform opacity-100 transition duration-100 ease-out'
+              : 'scale-95 transform opacity-0 transition duration-75 ease-in'
+          }
+          absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-500 rounded-md bg-gray-100 shadow-lg ring-1 ring-gray-500 ring-opacity-5 focus:outline-none dark:divide-gray-500 dark:bg-gray-800 dark:ring-gray-500`}
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="menu-button"
+          tabIndex="-1"
         >
-          Sign out
-        </button>
+          <div className="py-1" role="none">
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300"
+              role="menuitem"
+              tabIndex="-1"
+              id="menu-item-0"
+            >
+              Profile
+            </a>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300"
+              role="menuitem"
+              tabIndex="-1"
+              id="menu-item-1"
+            >
+              Settings
+            </a>
+          </div>
+          <div className="py-1" role="none">
+            <a
+              onClick={() => signOut()}
+              className="flex justify-between px-4 py-2 text-sm text-gray-700 dark:text-gray-300"
+              role="menuitem"
+              tabIndex="-1"
+              id="menu-item-3"
+            >
+              <span>Sign out</span>
+              <FiLogOut className="inline" size={20} />
+            </a>
+          </div>
+        </div>
       </div>
     )
   }
   return (
-    <button
-      className="focus:shadow-outline-primary rounded-md border border-transparent bg-primary-600 px-3 py-2 text-sm font-medium leading-4 text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none active:bg-primary-600"
+    <Button
+      color="yellow"
       onClick={() => signIn()}
+      rightIcon={<FiLogIn className="inline" size={20} />}
     >
       Sign in
-    </button>
+    </Button>
   )
 }
 
