@@ -6,7 +6,7 @@ const projectsData = [
     href: 'https://www.google.com',
   },
   {
-    title: 'Online Cash Management Systeme',
+    title: 'Online Cash Management System',
     description: `Online Cash Management System is a web application that allows users to manage cash in game online such as SPORTS, CASINO, SLOT, POKER, ...`,
     imgSrc: '/static/images/time-machine.jpg',
     href: '/blog/the-time-machine',

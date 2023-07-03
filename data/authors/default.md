@@ -65,6 +65,7 @@ education: [
       end: 'Jun 2022',
       major: 'Bachelor of Computer Science and Engineering',
       location: 'Phnom Penh, Cambodia',
+      link: 'https://www.rupp.edu.kh/',
     },
     {
       university: 'Western Iowa Tech Community College',
@@ -73,6 +74,7 @@ education: [
       end: 'Jul 2022',
       major: 'Video Game Design - Short Course',
       location: 'Online By Union of Youth Federations of Cambodia',
+      link: 'https://www.witcc.edu/',
     },
     {
       university: 'Royal University of Phnom Penh',
@@ -81,6 +83,7 @@ education: [
       end: 'Jul 2018',
       major: 'Graphic Design 101 - Short Course',
       location: 'Phnom Penh, Cambodia',
+      link: 'https://www.rupp.edu.kh/',
     },
   ]
 

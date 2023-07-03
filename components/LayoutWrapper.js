@@ -7,6 +7,37 @@ import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import { useRouter } from 'next/router'
+import { useSession, signIn, signOut } from 'next-auth/react'
+
+const Profile = () => {
+  const { data: session } = useSession()
+  if (session) {
+    return (
+      <div className="flex items-center justify-between">
+        <div className="flex items-center">
+          <div className="mr-3">
+            <img src={session.user.image} alt="avatar" className="h-10 w-10 rounded-full" />
+          </div>
+          <div className="hidden h-6 text-2xl font-semibold sm:block">{session.user.name}</div>
+        </div>
+        <button
+          className="focus:shadow-outline-primary rounded-md border border-transparent bg-primary-600 px-3 py-2 text-sm font-medium leading-4 text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none active:bg-primary-600"
+          onClick={() => signOut()}
+        >
+          Sign out
+        </button>
+      </div>
+    )
+  }
+  return (
+    <button
+      className="focus:shadow-outline-primary rounded-md border border-transparent bg-primary-600 px-3 py-2 text-sm font-medium leading-4 text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none active:bg-primary-600"
+      onClick={() => signIn()}
+    >
+      Sign in
+    </button>
+  )
+}
 
 const LayoutWrapper = ({ children }) => {
   const router = useRouter()
@@ -53,6 +84,7 @@ const LayoutWrapper = ({ children }) => {
               ))}
             </div>
             <ThemeSwitch />
+            <Profile />
             <MobileNav />
           </div>
         </header>
