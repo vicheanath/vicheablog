@@ -13,7 +13,7 @@ export default function Courses() {
             Courses
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Here are some of the courses I've taken.
+            Here are some of the courses I've taken. I'm always looking for new courses to take, so
           </p>
         </div>
         <div className="container py-12">
