@@ -30,10 +30,10 @@ export default function AuthorLayout({ children, frontMatter }) {
               placeholder="blur"
               blurDataURL={avatar}
             />
-            <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
-            <div className="text-lg text-gray-500 dark:text-gray-400">{occupation}</div>
+            <h3 className="pt-4 pb-2 text-2xl font-bold leading-7 tracking-tight">{name}</h3>
+            <div className="text-lg font-bold text-gray-500 dark:text-gray-400">{occupation}</div>
             <div className="text-gray-500 dark:text-gray-400">{company}</div>
-            <div className="flex space-x-3 pt-6">
+            <div className="flex space-x-3 pt-3">
               <SocialIcon kind="mail" href={`mailto:${email}`} />
               <SocialIcon kind="github" href={github} />
               <SocialIcon kind="linkedin" href={linkedin} />
@@ -41,7 +41,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             </div>
 
             <div className="flex flex-col items-center justify-center">
-              <h3 className="pt-4 pb-2 text-2xl font-bold">Subscribe</h3>
+              <h3 className="pt-2 pb-2 text-2xl font-bold">Subscribe</h3>
               <p className="text-lg text-gray-600 dark:text-gray-100">B. CHEA</p>
               <div
                 className="g-ytsubscribe"

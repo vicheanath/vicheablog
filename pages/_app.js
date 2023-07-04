@@ -38,6 +38,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
         <Analytics />
         <LayoutWrapper>
           <Component {...pageProps} />
+          <div id="modal-root"></div>
         </LayoutWrapper>
       </SessionProvider>
     </ThemeProvider>
