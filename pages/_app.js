@@ -27,11 +27,9 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
-      <LayoutWrapper {...pageProps}>
-        <SessionProvider session={session}>
-          <Component {...pageProps} />
-          <div id="modal-root"></div>
-        </SessionProvider>
+      <LayoutWrapper>
+        <Component {...pageProps} />
+        <div id="modal-root"></div>
       </LayoutWrapper>
     </ThemeProvider>
   )
