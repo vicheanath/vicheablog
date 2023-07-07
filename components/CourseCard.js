@@ -49,7 +49,7 @@ const CourseCard = ({ title, description, imgSrc, href, draft, price, salePrice 
               <FiTag className="mr-1 inline" size={20} />
               {salePrice && (
                 <span className="text-base font-medium leading-6 text-red-500 line-through dark:text-red-400">
-                  {price} <span className="text-sm">USD</span>
+                  {price} USD
                 </span>
               )}
               <span className="text-2xl font-bold leading-6 text-green-500 dark:text-green-400">
