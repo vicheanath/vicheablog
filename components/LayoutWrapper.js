@@ -8,14 +8,17 @@ import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import { useRouter } from 'next/router'
-import { useSession, signIn, signOut } from 'next-auth/react'
+import { signIn, signOut, SessionProvider, useSession } from 'next-auth/react'
 import Button from './Button'
 import { FiLogIn, FiLogOut } from 'react-icons/fi'
 
 const Profile = () => {
   const { data: session } = useSession()
+
   const [isOpen, setIsOpen] = React.useState(false)
   if (session) {
+    console.log(session)
+
     return (
       <div
         className="relative inline-block cursor-pointer justify-center rounded-md px-3 py-2 hover:bg-gray-100 focus:outline-none dark:hover:bg-gray-800"
