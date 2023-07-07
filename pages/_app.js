@@ -24,10 +24,9 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           rel="stylesheet"
         />
       </Head>
-      {isDevelopment && isSocket && <ClientReload />}
-      <Analytics />
-
-      <LayoutWrapper session={session} {...pageProps}>
+      {/* {isDevelopment && isSocket && <ClientReload />} */}
+      {/* <Analytics /> */}
+      <LayoutWrapper {...pageProps}>
         <Component {...pageProps} />
         <div id="modal-root"></div>
       </LayoutWrapper>
