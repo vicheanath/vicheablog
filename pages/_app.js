@@ -35,12 +35,12 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <Analytics />
-      <SessionProvider session={session}>
-        <LayoutWrapper {...pageProps}>
+      <LayoutWrapper {...pageProps}>
+        <SessionProvider session={session}>
           <Component {...pageProps} />
           <div id="modal-root"></div>
-        </LayoutWrapper>
-      </SessionProvider>
+        </SessionProvider>
+      </LayoutWrapper>
     </ThemeProvider>
   )
 }
