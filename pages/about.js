@@ -35,8 +35,8 @@ export default function About({ authorDetails }) {
       <div className="mt-5">
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Education</h1>
         <ul className="mt-5 flex flex-col gap-5">
-          {education.map((edu) => (
-            <li key={edu} className="grid grid-cols-2 gap-5 sm:grid-cols-8">
+          {education.map((edu, idx) => (
+            <li key={idx} className="grid grid-cols-2 gap-5 sm:grid-cols-8">
               <span className="flex items-center justify-center rounded-md bg-gray-100 p-3 dark:bg-gray-200 sm:col-span-1">
                 <Image
                   src={edu.logo}
