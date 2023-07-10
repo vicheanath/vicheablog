@@ -6,7 +6,6 @@ import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
 import siteMetadata from '@/data/siteMetadata'
 import Analytics from '@/components/analytics'
-import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
 import { SessionProvider } from 'next-auth/react'
 
@@ -26,12 +25,10 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
             rel="stylesheet"
           />
         </Head>
-        {/* {isDevelopment && isSocket && <ClientReload />} */}
+        {isDevelopment && isSocket && <ClientReload />}
         <Analytics />
-        <LayoutWrapper {...pageProps}>
-          <Component {...pageProps} />
-          <div id="modal-root"></div>
-        </LayoutWrapper>
+        <Component {...pageProps} />
+        <div id="modal-root"></div>
       </ThemeProvider>
     </SessionProvider>
   )
