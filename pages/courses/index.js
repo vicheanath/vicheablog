@@ -2,10 +2,11 @@ import siteMetadata from '@/data/siteMetadata'
 import CourseCard from '@/components/CourseCard'
 import { PageSEO } from '@/components/SEO'
 import coursesData from '@/data/coursesData'
+import LayoutWrapper from '@/components/LayoutWrapper'
 
 export default function Courses() {
   return (
-    <>
+    <LayoutWrapper>
       <PageSEO title={`Courses - ${siteMetadata.author}`} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
@@ -34,6 +35,6 @@ export default function Courses() {
         </div>
         <div></div>
       </div>
-    </>
+    </LayoutWrapper>
   )
 }

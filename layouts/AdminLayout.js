@@ -10,6 +10,7 @@ import {
   FiUser,
   FiVideo,
 } from 'react-icons/fi'
+import LayoutWrapper from '@/components/LayoutWrapper'
 
 export default function AdminLayout({ children }) {
   const router = useRouter()
@@ -35,28 +36,30 @@ export default function AdminLayout({ children }) {
   }
 
   return (
-    <div className="flex flex-col gap-5 md:flex-row">
-      <div className="">
-        <ul className="flex flex-col gap-1">
-          {menu.map((item) => (
-            <li
-              key={item.name}
-              className={`rounded-md px-5 py-3 hover:bg-gray-200 dark:hover:bg-gray-800 ${activeMenu(
-                item.href
-              )}`}
-            >
-              <Link
-                href={item.href}
-                className="flex items-center gap-2 text-lg font-medium text-gray-900 dark:text-gray-100"
+    <LayoutWrapper>
+      <div className="flex flex-col gap-5 md:flex-row">
+        <div className="">
+          <ul className="flex flex-col gap-1">
+            {menu.map((item) => (
+              <li
+                key={item.name}
+                className={`rounded-md px-5 py-3 hover:bg-gray-200 dark:hover:bg-gray-800 ${activeMenu(
+                  item.href
+                )}`}
               >
-                {item.icon}
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+                <Link
+                  href={item.href}
+                  className="flex items-center gap-2 text-lg font-medium text-gray-900 dark:text-gray-100"
+                >
+                  {item.icon}
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="flex w-full flex-1 flex-col">{children}</div>
       </div>
-      <div className="flex w-full flex-1 flex-col">{children}</div>
-    </div>
+    </LayoutWrapper>
   )
 }

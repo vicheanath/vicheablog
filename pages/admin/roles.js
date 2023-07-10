@@ -1,12 +1,11 @@
 import React from 'react'
 import Button from '@/components/Button'
-import { RoleService } from 'services/RoleService'
 import Image from 'next/image'
 import AdminLayout from '@/layouts/AdminLayout'
 import { FiEdit2, FiTrash2 } from 'react-icons/fi'
 
 export async function getServerSideProps() {
-  const roles = await RoleService.findAll()
+  const roles = []
   return {
     props: {
       roles: JSON.parse(JSON.stringify(roles)),

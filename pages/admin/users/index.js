@@ -1,15 +1,14 @@
 import React from 'react'
 import Button from '@/components/Button'
-import { UserService } from 'services/UserService'
 import Image from 'next/image'
 import AdminLayout from '@/layouts/AdminLayout'
+import { api } from '@/lib/utils/axios'
 
 export async function getServerSideProps() {
-  const users = await UserService.findAll()
-  console.log(users)
+  const users = await api.get('/admin/users').then((r) => r.data.data)
   return {
     props: {
-      users: JSON.parse(JSON.stringify(users)),
+      users: users,
     },
   }
 }
