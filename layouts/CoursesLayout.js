@@ -22,7 +22,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               volume={0.6}
             />
           </div>
-          <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
+          <div className="prose max-w-none pb-8 pt-8 dark:prose-dark xl:col-span-2">{children}</div>
         </div>
         <div className="col-span-1">
           <div className="flex flex-col items-center">Hello</div>
