@@ -3,7 +3,7 @@ import SocialIcon from '@/components/social-icons'
 import { getFileBySlug } from '@/lib/mdx'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import LayoutWrapper from '@/components/LayoutWrapper'
 import { FiCalendar, FiMapPin, FiExternalLink } from 'react-icons/fi'
 
 const DEFAULT_LAYOUT = 'AuthorLayout'
@@ -26,7 +26,7 @@ export default function About({ authorDetails }) {
     recommendation,
   } = frontMatter
   return (
-    <>
+    <LayoutWrapper>
       <MDXLayoutRenderer
         layout={frontMatter.layout || DEFAULT_LAYOUT}
         mdxSource={mdxSource}
@@ -269,6 +269,6 @@ export default function About({ authorDetails }) {
           ))}
         </ul>
       </div>
-    </>
+    </LayoutWrapper>
   )
 }
