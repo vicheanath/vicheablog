@@ -1,12 +1,11 @@
 import React from 'react'
 import Button from '@/components/Button'
 import AdminLayout from '@/layouts/AdminLayout'
-import { PermissionService } from 'services/PermissionService'
 import { FiEdit, FiEdit2, FiTrash2, FiX } from 'react-icons/fi'
 import Model from '@/components/Model'
 
 export async function getServerSideProps() {
-  const permission = await PermissionService.findAll()
+  const permission = []
   return {
     props: {
       permission: JSON.parse(JSON.stringify(permission)),
