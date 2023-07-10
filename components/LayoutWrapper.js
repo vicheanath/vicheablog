@@ -17,8 +17,6 @@ const Profile = () => {
 
   const [isOpen, setIsOpen] = React.useState(false)
   if (session) {
-    console.log(session)
-
     return (
       <div
         className="relative inline-block cursor-pointer justify-center rounded-md px-3 py-2 hover:bg-gray-100 focus:outline-none dark:hover:bg-gray-800"
@@ -138,7 +136,7 @@ const LayoutWrapper = ({ children }) => {
               ))}
             </div>
             <ThemeSwitch />
-            <Profile />
+            {/* <Profile /> */}
             <MobileNav />
           </div>
         </header>
