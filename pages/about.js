@@ -237,12 +237,15 @@ export default function About({ authorDetails }) {
           {recommendation.map((re) => (
             <li key={re} className="grid grid-cols-1 gap-5 rounded-md sm:grid-cols-4">
               <div className="col-span-1 flex flex-col items-center justify-center gap-5">
-                <span className=" flex items-center justify-center overflow-hidden rounded-full">
+                <span className=" flex items-center justify-center overflow-hidden">
                   <Image
                     src={re.photo}
                     alt={re.name}
                     width={200}
                     height={200}
+                    style={{
+                      clipPath: `url(#squircleClip)`,
+                    }}
                     objectFit="contain"
                     placeholder="blur"
                     blurDataURL={re.photo}
