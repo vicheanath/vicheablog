@@ -1,5 +1,5 @@
 ---
-title: bridge between the gap between technology and language, Bring Khmer language to teach
+title: bridge between the gap between technology and language, Bring Khmer language to tech
 date: '2023-10-21:13:46'
 tags: ['khmer', 'developer', 'language']
 draft: false
