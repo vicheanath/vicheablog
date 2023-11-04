@@ -2,7 +2,7 @@
 title: bridge between the gap between technology and language, Bring Khmer language to tech
 date: '2023-10-21:13:46'
 tags: ['khmer', 'developer', 'language']
-draft: false
+draft: true
 summary: Currently, Cambodia developers that develop tech products really hard to put the Khmer language into their platform because Some developer doesn’t have a big amount of knowledge about the Khmer language, Yes we are Cambodia people but to know every word and every sentence in Khmer include some Baley language
 ---
 
