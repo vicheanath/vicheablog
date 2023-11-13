@@ -59,7 +59,7 @@
     "@next/bundle-analyzer": "12.1.4",
     "@svgr/webpack": "^6.1.2",
     "cross-env": "^7.0.3",
-    "dedent": "^0.7.0",
+    "dedent": "^1.5.1",
     "eslint": "^7.29.0",
     "eslint-config-next": "12.1.4",
     "eslint-config-prettier": "^8.3.0",
